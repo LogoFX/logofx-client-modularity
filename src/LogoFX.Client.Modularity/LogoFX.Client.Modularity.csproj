@@ -38,6 +38,7 @@
     <Compile Include="IRootViewModel.cs" />
     <Compile Include="IUiModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UiModuleBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
