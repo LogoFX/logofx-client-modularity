@@ -1,5 +1,4 @@
 using System;
-using Solid.Practices.IoC;
 
 namespace LogoFX.Client.Modularity
 {
@@ -23,16 +22,12 @@ namespace LogoFX.Client.Modularity
         where TRootViewModel : class, IRootViewModel
     {
         private TRootViewModel _rootViewModel;
-        private IIocContainerResolver _iocContainer;
 
         /// <summary>
         /// Gets the root view model.
         /// </summary>
         /// <returns></returns>
-        protected virtual TRootViewModel GetRootViewModel()
-        {
-            return _rootViewModel ?? (_rootViewModel = _iocContainer.Resolve<TRootViewModel>());
-        }
+        protected abstract TRootViewModel GetRootViewModel();        
 
         /// <summary>
         /// Clears the root view model.
@@ -45,10 +40,7 @@ namespace LogoFX.Client.Modularity
         /// <summary>
         /// Gets the type of the root view model.
         /// </summary>
-        public Type RootModelType
-        {
-            get { return typeof(TRootViewModel); }
-        }
+        public Type RootModelType => typeof(TRootViewModel);
 
         /// <summary>
         /// Gets the identifier.
@@ -71,57 +63,21 @@ namespace LogoFX.Client.Modularity
         /// <summary>
         /// Gets the root view model.
         /// </summary>
-        public TRootViewModel RootViewModel
-        {
-            get { return GetRootViewModel(); }
-        }
+        public TRootViewModel RootViewModel => _rootViewModel ?? (_rootViewModel = GetRootViewModel());
 
         /// <summary>
         /// Module ID.
         /// </summary>
-        public string Id
-        {
-            get { return GetId(); }
-        }
+        public string Id => GetId();
 
         /// <summary>
         /// Module display name.
         /// </summary>
-        public string Name
-        {
-            get { return GetName(); }
-        }
+        public string Name => GetName();
 
         /// <summary>
         /// Module display order.
         /// </summary>
-        public int Order
-        {
-            get { return GetOrder(); }
-        }
-
-        /// <summary>
-        /// Registers composition module into IoC container.
-        /// </summary>
-        /// <param name="iocContainer">IoC container.</param>
-        public void RegisterModule(IIocContainer iocContainer)
-        {
-            RegisterCore(iocContainer);
-            RegisterOverride(iocContainer);
-        }
-
-        private void RegisterCore(IIocContainer iocContainer)
-        {
-            _iocContainer = iocContainer;
-        }
-
-        /// <summary>
-        /// Override this method to inject custom logic during module registration.
-        /// </summary>
-        /// <param name="iocContainer">The ioc container.</param>
-        public virtual void RegisterOverride(IIocContainer iocContainer)
-        {
-
-        }
+        public int Order => GetOrder();                
     }
 }

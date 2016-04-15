@@ -1,13 +1,11 @@
 ﻿using System;
-using Solid.Practices.IoC;
-using Solid.Practices.Modularity;
 
 namespace LogoFX.Client.Modularity
 {
     /// <summary>
-    /// Represents user interface composition module.
+    /// Represents user interface module.
     /// </summary>
-    public interface IUiModule : ICompositionModule
+    public interface IUiModule
     {
         /// <summary>
         /// Module ID.
@@ -26,10 +24,10 @@ namespace LogoFX.Client.Modularity
     }
 
     /// <summary>
-    /// Respresents user interface composition module with root view model.
+    /// Respresents user interface module with root view model.
     /// </summary>
     /// <typeparam name="TRootViewModel">Type of Root ViewModel</typeparam>
-    public interface IUiModule<out TRootViewModel> : IUiModule, ICompositionModule<IIocContainer> 
+    public interface IUiModule<out TRootViewModel> : IUiModule 
         where TRootViewModel : IRootViewModel
     {
         /// <summary>
