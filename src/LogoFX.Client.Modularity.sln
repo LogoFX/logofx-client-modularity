@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Client.Modularity", "LogoFX.Client.Modularity\LogoFX.Client.Modularity.csproj", "{1930E259-7724-429F-9A28-F9D5DA64F5A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Client.Modularity", "LogoFX.Client.Modularity\portable\LogoFX.Client.Modularity.csproj", "{1930E259-7724-429F-9A28-F9D5DA64F5A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
