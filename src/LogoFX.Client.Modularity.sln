@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogoFX.Client.Modularity.NETStandard13", "LogoFX.Client.Modularity\netstandard1.3\LogoFX.Client.Modularity.NETStandard13.csproj", "{78580283-438D-4EBA-8431-04CB251EFBA3}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogoFX.Client.Modularity.NETStandard20", "LogoFX.Client.Modularity\netstandard2.0\LogoFX.Client.Modularity.NETStandard20.csproj", "{ABB64308-624B-4927-BFB7-35AA08E8B971}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{78580283-438D-4EBA-8431-04CB251EFBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78580283-438D-4EBA-8431-04CB251EFBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78580283-438D-4EBA-8431-04CB251EFBA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78580283-438D-4EBA-8431-04CB251EFBA3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ABB64308-624B-4927-BFB7-35AA08E8B971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ABB64308-624B-4927-BFB7-35AA08E8B971}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABB64308-624B-4927-BFB7-35AA08E8B971}.Release|Any CPU.ActiveCfg = Release|Any CPU
