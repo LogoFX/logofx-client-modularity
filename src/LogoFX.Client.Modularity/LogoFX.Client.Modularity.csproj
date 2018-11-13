@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>LogoFX.Client.Modularity</AssemblyName>
+    <RootNamespace>LogoFX.Client.Modularity</RootNamespace>
+    <Version>1.1.1</Version>
+  </PropertyGroup>
+  
+   <PropertyGroup>  
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\Bin\netstandard2.0\Release</OutputPath>
+    <DocumentationFile>..\Bin\netstandard2.0\Release\netstandard2.0\LogoFX.Client.Modularity.xml</DocumentationFile>
+  </PropertyGroup>
+ 
+</Project>
