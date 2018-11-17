@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>LogoFX.Client.Modularity</AssemblyName>
     <RootNamespace>LogoFX.Client.Modularity</RootNamespace>
-    <Version>1.1.1</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
   
    <PropertyGroup>  
