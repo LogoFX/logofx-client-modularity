@@ -1,17 +1,13 @@
 ﻿using System;
+using Solid.Core;
 
 namespace LogoFX.Client.Modularity
 {
     /// <summary>
     /// Represents user interface module.
     /// </summary>
-    public interface IUiModule
-    {
-        /// <summary>
-        /// Module ID.
-        /// </summary>
-        string Id { get; }
-
+    public interface IUiModule : IIdentifiable
+    {        
         /// <summary>
         /// Module display name.
         /// </summary>
@@ -24,7 +20,7 @@ namespace LogoFX.Client.Modularity
     }
 
     /// <summary>
-    /// Respresents user interface module with root view model.
+    /// Represents user interface module with root view model.
     /// </summary>
     /// <typeparam name="TRootViewModel">Type of Root ViewModel</typeparam>
     public interface IUiModule<out TRootViewModel> : IUiModule 

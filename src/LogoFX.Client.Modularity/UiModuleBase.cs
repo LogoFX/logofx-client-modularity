@@ -27,19 +27,15 @@ namespace LogoFX.Client.Modularity
         /// Gets the root view model.
         /// </summary>
         /// <returns></returns>
-        protected abstract TRootViewModel GetRootViewModel();        
+        protected abstract TRootViewModel GetRootViewModel();
 
-        /// <summary>
-        /// Clears the root view model.
-        /// </summary>
+        /// <inheritdoc />
         public override void ClearRoot()
         {
             _rootViewModel = null;
         }
 
-        /// <summary>
-        /// Gets the type of the root view model.
-        /// </summary>
+        /// <inheritdoc />        
         public Type RootModelType => typeof(TRootViewModel);
 
         /// <summary>
@@ -60,24 +56,16 @@ namespace LogoFX.Client.Modularity
         /// <returns></returns>
         protected abstract int GetOrder();
 
-        /// <summary>
-        /// Gets the root view model.
-        /// </summary>
+        /// <inheritdoc />       
         public TRootViewModel RootViewModel => _rootViewModel ?? (_rootViewModel = GetRootViewModel());
 
-        /// <summary>
-        /// Module ID.
-        /// </summary>
+        /// <inheritdoc />
         public string Id => GetId();
 
-        /// <summary>
-        /// Module display name.
-        /// </summary>
+        /// <inheritdoc />       
         public string Name => GetName();
 
-        /// <summary>
-        /// Module display order.
-        /// </summary>
+        /// <inheritdoc />       
         public int Order => GetOrder();                
     }
 }
