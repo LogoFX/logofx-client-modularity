@@ -16,5 +16,5 @@
     <dependencies>
       <dependency id="Solid.Core" version="2.3.0-rc1" />
     </dependencies>
-  </metadata> 
+  </metadata>
 </package>
