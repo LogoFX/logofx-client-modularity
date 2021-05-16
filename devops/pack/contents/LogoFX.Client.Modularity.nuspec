@@ -14,7 +14,7 @@
     <summary>LogoFX Client Modularity containing interface and base class for ui module and related concerns.</summary>
     <releaseNotes>Updated dependent packages</releaseNotes>
     <dependencies>
-      <dependency id="Solid.Core" version="2.3.0-rc1" />
+      <dependency id="Solid.Core" version="2.3.0" />
     </dependencies>
   </metadata>
 </package>
