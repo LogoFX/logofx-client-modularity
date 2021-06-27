@@ -12,9 +12,11 @@
     <iconUrl>https://github.com/LogoFX/logofx-assets/blob/master/icons/icon.png?raw=true</iconUrl>
     <description>LogoFX Client Modularity containing interface and base class for ui module and related concerns.</description>
     <summary>LogoFX Client Modularity containing interface and base class for ui module and related concerns.</summary>
-    <releaseNotes>Updated dependent packages</releaseNotes>
+    <releaseNotes></releaseNotes>
     <dependencies>
       <dependency id="Solid.Core" version="2.3.1" />
     </dependencies>
+    <tags>framework logofx dotnet</tags>
+    <repository type="Open Source" url="https://github.com/LogoFX/logofx-client-modularity" />
   </metadata>
 </package>
