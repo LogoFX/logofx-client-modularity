@@ -1,4 +1,3 @@
-
 namespace LogoFX.Client.Modularity
 {
     /// <summary>
